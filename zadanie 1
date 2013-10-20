@@ -13,4 +13,5 @@ main(){
   }
  printf ("Wartość sumy %i\n", suma);
 }
+
 ```
