@@ -74,5 +74,25 @@ main(){
 }
 ```
 
+Zad8.
+Program wczyuje liczbę całkowitą n>=0, a następne n liczb rzeczywistych (double %lf) i drukuje te liczby w trzech kolumnach w taki sposób, żeby zachować krycie (tzn. kropka dzisiętna zawsze była w tych samych kolumnach):
+
+```c
+#include<stdio.h>
+main(){
+	int n; int i;
+//printf ("podaj n "); 
+	scanf ("%i", &n);
+// deklaracja tablicy
+double tab[n];
+//pętla wczytująca dane do tablicy
+for (i=0; i<n; i++)
+	scanf ("%lf", &tab[i]);
+// pętla wypisująca dane z tablicy
+	for (i=0; i<n; i++){
+	printf (" %4.5lf |", tab[i]); if (i%3==2) printf ("\n");}
+	printf ("\n\n");
+}		
+```
 
 
