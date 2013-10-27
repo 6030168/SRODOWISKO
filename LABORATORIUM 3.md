@@ -57,6 +57,22 @@ main(){
 }
 ```
 
+Zad6.
+Obliczy i wypiszę na ekran sume kwadratów liczb od 1 do 20:
+
+```c
+#include<stdio.h>
+main(){
+  int n, m, l;
+  l=0;
+  for (n=1; n<21; n=n+1){
+  	m=n*n;
+  	l=l+m;
+  }
+        	printf ("Suma kwadratów liczb od 1 do 20 jest równa %i \n\n", l);
+    
+}
+```
 
 
 
