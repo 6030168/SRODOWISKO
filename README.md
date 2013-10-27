@@ -1,4 +1,4 @@
-#Zadania odpowiedzie
+#Zadania odpowiedzi
 
 Zad. 1
 Program wczytuje wartość liczby naturalnej n i drukuje wartość sumy kwadratów:
