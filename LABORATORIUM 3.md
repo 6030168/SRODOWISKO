@@ -96,3 +96,18 @@ for (i=0; i<n; i++)
 ```
 
 
+Zadanie z kartki nr 1
+tablica 5 liczb całkowitycg w następujący sposób: int tab[]={1,3,7,8,9} a następnie wypisze na ekran jej zawartość:
+
+```c
+#include<stdio.h>
+int main (){
+  int tab[]={1,3,7,8,9};
+  int a;
+    for (a=0; a<=4; a=a++)
+    printf (" %i ", tab[a]);
+
+  return 0;
+}	
+```
+
