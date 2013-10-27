@@ -97,7 +97,7 @@ for (i=0; i<n; i++)
 
 
 Zadanie z kartki nr 1
-tablica 5 liczb całkowitycg w następujący sposób: int tab[]={1,3,7,8,9} a następnie wypisze na ekran jej zawartość:
+tablica 5 liczb całkowitych w następujący sposób: int tab[]={1,3,7,8,9} a następnie wypisze na ekran jej zawartość:
 
 ```c
 #include<stdio.h>
@@ -109,5 +109,22 @@ int main (){
 
   return 0;
 }	
+```
+
+zad z kartki nr 5
+wczytuje to tablicy 5 elementowej liczby i zamienia je miejscami (kolejność od ostatniej komórki do pierwszej)
+
+```c
+#include<stdio.h>
+int main (){
+  int tab[5];
+int a;
+  for (a=0; a<=4; a++)
+  scanf ("%i", &tab[a]);
+      for (a=4; a>=0; a=a-1)
+    printf (" %i", tab[a]);
+
+  return 0;
+}
 ```
 
