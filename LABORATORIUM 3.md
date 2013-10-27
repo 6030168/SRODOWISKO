@@ -37,5 +37,26 @@ main(){
   
 }
 ```
+Zad5.
+Wczyta liczby i poda która jest większa
+
+```c
+#include<stdio.h>
+main(){
+  int n, m, l;
+  printf ("podaj liczbę ");
+  scanf (" %d", &n);
+  printf ("podaj drugą liczbę ");
+  scanf (" %d", &m);
+  l=m-n;
+    if (l<0)
+      printf ("Pierwsza liczba jest większa od drugiej \n");
+    else 
+	   printf ("Pierwsza liczba jest mniejsza lub równa drugiej \n\n");
+  
+}
+```
+
+
 
 
