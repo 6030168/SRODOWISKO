@@ -128,3 +128,27 @@ int a;
 }
 ```
 
+Zadania z kartki nr 8
+Wczyta tabele 5 elementową z klawaitury i zamienie pierwszą komórke na 5, wyśtwieli powstałą tabele.
+
+```c
+#include<stdio.h>
+int main (){
+  int tab[5];
+int a;
+//scanowanie do tabeli
+  for (a=0; a<=4; a++)
+  scanf ("%i", &tab[a]);
+//wyświetlenie wyników w tabeli
+  for (a=0; a<=4; a++)
+  printf (" %i ", tab[a]);
+  printf (" \n\n");
+//zamiana komórek miejscami
+  tab[0]=tab[4];
+   for (a=0; a<=4; a=a++)
+    printf (" %i ", tab[a]);
+  printf (" \n\n");
+return 0;
+}
+```
+
