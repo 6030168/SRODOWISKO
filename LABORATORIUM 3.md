@@ -152,3 +152,27 @@ return 0;
 }
 ```
 
+Zadanie z kartki nr 10
+Wczytuje dane do tablicy 5 elementowej, a następnie wyświatla drugą tablicę z komórkami o wartościacg dwukrotnie powiększonych...
+
+```c
+#include<stdio.h>
+int main (){
+  int tab[5];
+  int tabela[5];
+int a;
+//scanowanie do tabeli
+  for (a=0; a<=4; a++)
+  scanf ("%i", &tab[a]);
+//wyświetlenie wyników w tabeli
+  for (a=0; a<=4; a++)
+  printf (" %i ", tab[a]);
+  printf (" \n\n");
+//dwukrotnie powiększenie wartości w tabeli pierwszej
+     for (a=0; a<=4; a=a++)
+    printf (" %i ", 2*tab[a]);
+  printf (" \n\n");
+return 0;
+}
+```
+
