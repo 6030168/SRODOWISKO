@@ -152,8 +152,8 @@ return 0;
 }
 ```
 
-Zadanie z kartki nr 10
-Wczytuje dane do tablicy 5 elementowej, a następnie wyświatla drugą tablicę z komórkami o wartościacg dwukrotnie powiększonych...
+Zadanie z kartki nr 10  - ROZWIĄZANIE BŁĘDNE!
+Wczytuje dane do tablicy 5 elementowej, a następnie wyświatla drugą tablicę z komórkami o wartościach dwukrotnie powiększonych...
 
 ```c
 #include<stdio.h>
