@@ -68,7 +68,7 @@ main(){
     l=n%m;
     //printf ("Reszta z dzielenia przez  %d ", m);
     //printf ("wynosi %d \n\n", l);
-//zliczamy wyniki - ile razy reszta z dzielenia wynosi 0    
+//wypisujemy wyniki    
         if (l==0)
     	printf (" %d ", m);   
   }
