@@ -75,3 +75,48 @@ main(){
 }
 ```
 
+Zadanie 4
+Program zmienia liczbe z systemu dzisiętnego na:
+a) system dwójkowy
+
+```c
+#include<stdio.h>
+//program zmienia wczytaną liczbę z systemu dziesiętnego na dwójkowy
+main(){
+  int n, m, l, k, u;
+  int table[50];
+  k=0;
+    printf ("\n\n");
+    printf ("Podaj liczbę w systemie dziesięnym  ");
+  scanf (" %d", &n);
+    printf ("\n\n");
+//wypisujemy reszty z dzielenia podanej liczby przez 2
+  // zmienna dla początku pętli m
+  m=n;
+while (m>0){
+  l=m%2; // l reszta z dzielenia przez 2
+  table[k]=l;  // zapisuje resztę do tabeli
+  k++; // przestawia się na następną wolną komórke tabeli
+  
+  printf ("Liczbę %d dzielimy przez 2 i otrzymujemy: ", m);
+  m=m/2; 
+  printf (" %d \n", m);
+  printf (" Reszta:  %d \n\n", l);
+    
+}
+
+printf ("\n");
+
+// koniec obliczania reszt
+// wypisujemy w rządanej kolejności komórki w tabeli
+  printf ("Wynik w systemie dwójkowym: ");
+  k=k-1; // cofamy się do ostatniej zapisanej komórki
+  for (u=k; u>=0; u--){ // wypisywanie tabeli w poprotnej
+    printf (" %d", table[u]);
+}
+printf ("\n\n");
+}
+```
+
+b) system ósemkowy
+
