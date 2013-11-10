@@ -31,3 +31,23 @@ main(){
 ```
 
 Zad2.
+
+```c
+#include<stdio.h>
+//program dla wczytanej liczby obliczy najmniejszą liczbę n, taką że:
+//1+2+3+...+n>=M
+main(){
+  int M, k, l, n;
+  k=0;
+    printf ("Podaj liczbę \n\n");
+    scanf (" %d", &M);
+    printf ("\n\n");
+  for (l=1; k<M; l=l+1){
+      k=k+l;
+      if (k>=M)
+        //k=k-l;
+        printf ("Szukana liczba to %d \n\n", l);
+    }
+    printf ("Suma wynosi %d \n\n", k); 
+}
+```
