@@ -51,3 +51,27 @@ main(){
     printf ("Suma wynosi %d \n\n", k); 
 }
 ```
+
+Zad3.
+
+```c
+#include<stdio.h>
+//program dla wczytanej liczby wypisze wszystkie jej dzielniki
+main(){
+  int n, m, l, k;
+  k=0;
+  printf ("Podaj liczbę \n");
+  scanf (" %d", &n);
+//sprawdzamy reszte z dzielenia podanej liczby przez kolejne liczby począwszy od 1 kończąc na podanej liczbie  
+  printf ("Dzielniki liczby n = %d \n\n to: ", n);
+  for (m=1; m<=n; m=m+1){
+    l=n%m;
+    //printf ("Reszta z dzielenia przez  %d ", m);
+    //printf ("wynosi %d \n\n", l);
+//zliczamy wyniki - ile razy reszta z dzielenia wynosi 0    
+        if (l==0)
+    	printf (" %d ", m);   
+  }
+}
+```
+
