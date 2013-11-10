@@ -120,3 +120,41 @@ printf ("\n\n");
 
 b) system ósemkowy
 
+```c
+#include<stdio.h>
+//program zmienia wczytaną liczbę z systemu dziesiętnego na ósemkowy
+main(){
+  int n, m, l, k, u;
+  int table[50];
+    printf ("\n\n");
+    printf ("Podaj liczbę w systemie dziesięnym  ");
+  scanf (" %d", &n);
+    printf ("\n\n");
+//wypisujemy reszty z dzielenia podanej liczby przez 8
+  // zmienna dla początku pętli m
+  m=n;
+  k=0;
+while (m>0){
+  l=m%8; // l reszta z dzielenia przez 8
+  table[k]=l;  // zapisuje resztę do tabeli
+  k++; // przestawia się na następną wolną komórke tabeli
+  
+  printf ("Liczbę %d dzielimy przez 8 i otrzymujemy: ", m);
+  m=m/8; 
+  printf (" %d \n", m);
+  printf (" Reszta:  %d \n\n", l);
+    
+}
+
+printf ("\n");
+
+// koniec obliczania reszt
+// wypisujemy w rządanej kolejności komórki w tabeli
+  printf ("Wynik w systemie ósmekowym: ");
+  k=k-1; // cofamy się do ostatniej zapisanej komórki
+  for (u=k; u>=0; u--){ // wypisywanie tabeli w poprotnej
+    printf (" %d", table[u]);
+}
+printf ("\n\n");
+}
+```
